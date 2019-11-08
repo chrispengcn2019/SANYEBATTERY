@@ -1,0 +1,216 @@
+
+
+/* The timer in the Slider */
+#iview-timer {
+	position: absolute;
+	z-index: 100;
+	border-radius: 5px;
+	cursor: pointer;
+}
+
+#iview-timer div {
+	border-radius: 3px;
+}
+
+/* The Preloader in the Slider */
+#iview-preloader {
+	position: absolute;
+	z-index: 1000;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+	border: #000 1px solid;
+	padding: 1px;
+	width: 100px;
+	height: 3px;
+}
+#iview-preloader div {
+	float: left;
+	-webkit-border-radius: 2px;
+	-moz-border-radius: 2px;
+	border-radius: 2px;
+	height: 3px;
+	background: #000;
+	width: 0px;
+}
+
+/* The strips and boxes in the Slider */
+.iview-strip {
+	display:block;
+	position:absolute;
+	z-index:5;
+}
+.iview-block {
+	display:block;
+	position:absolute;
+	z-index:5;
+}
+
+
+/* Control nav styles (e.g. 1,2,3...) */
+.iview-controlNav {
+	position:absolute;
+	z-index:9;
+}
+.iview-controlNav a {
+	z-index:9;
+	cursor:pointer;
+}
+.iview-controlNav a.active {
+	font-weight:bold;
+}
+.iview-controlNav .iview-items ul {
+	list-style: none;
+}
+.iview-controlNav .iview-items ul li {
+	display: inline;
+	position: relative;
+}
+.iview-controlNav .iview-tooltip {
+	position: absolute;
+}
+
+.iview-controlNav.iview-bullet {
+	position: absolute;
+	bottom: 30px;
+	left: 347px;
+	height: 44px;
+}
+
+.iview-controlNav.iview-bullet a {
+	text-indent: -9999px;
+}
+
+.iview-controlNav.iview-bullet a.iview-controlPrevNav {
+	float: left;
+	width: 50px;
+	height: 44px;
+	background: url('images/slider-controls.png') no-repeat;
+}
+
+.iview-controlNav.iview-bullet a.iview-controlNextNav {
+	float: left;
+	width: 50px;
+	height: 44px;
+	background: url('images/slider-controls.png') no-repeat -50px 0px;
+}
+
+.iview-controlNav.iview-bullet div.iview-items {
+	float: left;
+	padding: 0px 10px 0px 10px;
+	height: 44px;
+	background: url('images/nav-bg.png');
+}
+
+.iview-controlNav.iview-bullet a.iview-control {
+	padding: 0px;
+	float: left;
+	width: 11px;
+	height: 12px;
+	background: url('images/bullets.png') no-repeat;
+	line-height: 0px;
+}
+
+.iview-controlNav.iview-bullet a.iview-control.active {
+	background-position: 0px -12px;
+}
+
+.iview-controlNav.iview-bullet div.iview-items ul li {
+	padding: 0px;
+	float: left;
+	width: 11px;
+	height: 12px;
+	margin: 3px;
+	margin-top: 16px;
+	line-height: 0px;
+}
+
+.iview-controlNav .iview-tooltip {
+	position: absolute;
+}
+
+.iview-controlNav.iview-thumb {
+	position: static;
+	height: 45px;
+	text-align: center;
+	background: url('images/navigation-bg.png');
+	border-radius: 0px 0px 4px 4px;
+}
+
+.iview-controlNav.iview-thumb .iview-items {
+	display: block;
+	padding: 0px 20px;
+}
+
+.iview-controlNav.iview-thumb a img {
+	height: 30px;
+	border: #000 1px solid;
+	margin: 7px 7px 0px 0px;
+	border-radius: 2px;
+}
+
+.iview-controlNav.iview-thumb a.active img {
+	border-color: #999;
+}
+
+/* The captions in the Slider */
+.iview-caption {
+	position:absolute;
+	z-index:4;
+	overflow: hidden;
+	cursor: default;
+}
+
+
+
+
+
+
+
+
+
+.ptssliderlayer {
+	display: block;
+	position: relative;
+	clear: both;
+}
+
+.ptssliderlayer .iviewSlider {
+	display: block;
+	overflow: hidden;
+	border-radius: 4px;
+}
+
+
+
+.ptssliderlayer div.iview-directionNav {
+	position: absolute;
+	top: 47%;
+	left: 0px;
+	z-index: 9;
+	width: 100%;
+}
+
+.ptssliderlayer div.iview-directionNav a {
+	display: block;
+	cursor: pointer;
+	position: absolute;
+	width: 27px;
+	height: 27px;
+	background-image: url(images/bg_direction_nav.png);
+	text-indent: -9999px;
+}
+
+.iview-directionNav a {
+	position:absolute;
+	top:45%;
+	z-index:9;
+	cursor:pointer;
+}
+.iview-prevNav {
+	left:0px;
+}
+.iview-nextNav {
+	right:0px;
+}
+

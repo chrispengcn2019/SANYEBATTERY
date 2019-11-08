@@ -1,0 +1,18 @@
+.tags_block .block_content {
+  overflow: hidden; }
+  .tags_block .block_content a {
+    display: inline-block;
+    font-size: 13px;
+    line-height: 16px;
+    padding: 4px 9px 5px 9px;
+    border: 1px solid #e1e1e1;
+    color: #444444;
+    float: left;
+    margin: 0 7px 7px 0; }
+    .rtl .tags_block .block_content a {
+      float: right; }
+    .rtl .tags_block .block_content a {
+      margin: 0 0 7px 7px; }
+    .tags_block .block_content a:hover {
+      color: #555555;
+      background: #f6f6f6; }

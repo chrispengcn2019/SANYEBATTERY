@@ -1,0 +1,299 @@
+/* The timer in the Slider */
+#iview-timer {
+  position: absolute;
+  z-index: 99;
+  cursor: pointer; }
+
+/* The Preloader in the Slider */
+#iview-preloader {
+  position: absolute;
+  z-index: 1000;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  border: #000 1px solid;
+  padding: 1px;
+  width: 100px;
+  height: 3px; }
+
+#iview-preloader div {
+  float: left;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  border-radius: 2px;
+  height: 3px;
+  background: #000;
+  width: 0px; }
+  .rtl #iview-preloader div {
+    float: right; }
+
+/* The strips and boxes in the Slider */
+.iview-strip {
+  display: block;
+  position: absolute;
+  z-index: 5; }
+
+.iview-block {
+  display: block;
+  position: absolute;
+  z-index: 5; }
+
+/* Control nav styles (e.g. 1,2,3...) */
+.iview-controlNav {
+  position: absolute;
+  z-index: 9; }
+
+.iview-controlNav a {
+  z-index: 9;
+  cursor: pointer; }
+
+.iview-controlNav a.active {
+  font-weight: bold; }
+
+.iview-controlNav .iview-items ul {
+  list-style: none; }
+
+.iview-controlNav .iview-items ul li {
+  display: inline;
+  position: relative; }
+
+.iview-controlNav .iview-tooltip {
+  position: absolute; }
+
+.iview-controlNav.iview-bullet {
+  width: 100%;
+  text-align: center;
+  bottom: 20px; }
+  .iview-controlNav.iview-bullet ul {
+    -moz-user-select: none;
+    cursor: default;
+    display: inline-block;
+    list-style: outside none none;
+    margin: 0;
+    padding: 0;
+    position: relative; }
+    .iview-controlNav.iview-bullet ul li {
+      cursor: pointer;
+      display: block;
+      float: left;
+      height: 20px;
+      margin: 3px 5px;
+      position: relative;
+      width: 20px;
+      border-radius: 50%;
+      border: 2px solid rgba(255, 255, 255, 0);
+      transition: border 0.3s ease 0s; }
+      .rtl .iview-controlNav.iview-bullet ul li {
+        float: right; }
+      .iview-controlNav.iview-bullet ul li a {
+        background-color: rgba(255, 255, 255, 0.3);
+        border-radius: 50%;
+        cursor: pointer;
+        left: 0;
+        outline: medium none;
+        position: absolute;
+        text-indent: -999em;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        text-indent: -9999px;
+        background-color: rgba(255, 255, 255, 0.7);
+        transition: background-color 0.3s ease 0s, transform 0.3s ease 0s; }
+        .rtl .iview-controlNav.iview-bullet ul li a {
+          right: 0;
+          left: auto; }
+        .iview-controlNav.iview-bullet ul li a :focus {
+          outline: medium none; }
+        .iview-controlNav.iview-bullet ul li a:focus, .iview-controlNav.iview-bullet ul li a:hover {
+          background-color: #fff; }
+      .iview-controlNav.iview-bullet ul li.active {
+        border: 2px solid white; }
+        .iview-controlNav.iview-bullet ul li.active a {
+          background-color: #fff;
+          transform: scale(0.4); }
+
+.iview-controlNav .iview-tooltip {
+  position: absolute; }
+
+.iview-controlNav.iview-thumb {
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: inherit;
+  margin: auto;
+  content: "";
+  position: absolute;
+  text-align: center; }
+
+.iview-controlNav.iview-thumb a img {
+  -webkit-filter: grayscale(100%);
+  -moz-filter: grayscale(100%);
+  -o-filter: grayscale(100%);
+  -ms-filter: grayscale(100%);
+  filter: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'><filter id='grayscale'><feColorMatrix type='matrix' values='0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0'/></filter></svg>#grayscale");
+  /* Firefox 10+, Firefox on Android */ }
+  @media (min-width: 1230px) {
+    .iview-controlNav.iview-thumb a img {
+      height: 139px; } }
+  @media (max-width: 1230px) {
+    .iview-controlNav.iview-thumb a img {
+      height: 135px; } }
+  @media (max-width: 1199px) {
+    .iview-controlNav.iview-thumb a img {
+      height: 80px; } }
+  @media (max-width: 767px) {
+    .iview-controlNav.iview-thumb a img {
+      display: none; } }
+
+.iview-controlNav.iview-thumb li.active a img, .iview-controlNav.iview-thumb li:hover a img, .iview-controlNav.iview-thumb li:focus a img {
+  -webkit-filter: none;
+  -moz-filter: none;
+  -o-filter: none;
+  -ms-filter: none;
+  filter: none;
+  /* Firefox 10+, Firefox on Android */ }
+
+/* The captions in the Slider */
+.iview-caption {
+  position: absolute;
+  z-index: 4;
+  overflow: hidden;
+  cursor: default; }
+
+.ptssliderlayer {
+  display: block;
+  position: relative;
+  clear: both;
+  overflow: hidden; }
+
+.ptssliderlayer .iviewSlider {
+  display: block;
+  overflow: hidden;
+  background-size: cover !important;
+  background-position: 50% 50% !important; }
+
+/* .ptssliderlayer {
+	position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0px;
+    left: 0px;
+}
+
+.ptssliderlayer .iviewSlider {
+    top: 0px;
+    left: 0px;
+
+} */
+.rtl .ptssliderlayer .iviewSlider {
+  transform-origin: right 0 0 !important;
+  -webkit-transform-origin: right 0 0 !important;
+  -ms-transform-origin: right 0 0 !important;
+  -moz-transform-origin: right 0 0 !important;
+  -o-transform-origin: right 0 0 !important; }
+
+.ptssliderlayer div.iview-directionNav {
+  position: absolute;
+  top: 47%;
+  left: 0px;
+  z-index: 9;
+  width: 100%; }
+  .rtl .ptssliderlayer div.iview-directionNav {
+    right: 0px;
+    left: auto; }
+
+.ptssliderlayer div.iview-directionNav a {
+  bottom: 0;
+  box-shadow: 0 0 0 2px #000000 inset;
+  color: #000000;
+  font-size: 18px;
+  height: 54px;
+  line-height: 54px;
+  margin: auto;
+  opacity: 1;
+  position: absolute;
+  text-align: center;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0);
+  width: 54px;
+  -webkit-transition: all 0.4s ease 0s;
+  -o-transition: all 0.4s ease 0s;
+  transition: all 0.4s ease 0s; }
+  .ptssliderlayer div.iview-directionNav a:hover, .ptssliderlayer div.iview-directionNav a:focus {
+    box-shadow: 0 0 0 30px #000000 inset;
+    color: #ffffff;
+    -webkit-transition: all 0.4s ease 0s;
+    -o-transition: all 0.4s ease 0s;
+    transition: all 0.4s ease 0s; }
+
+.iview-directionNav a {
+  position: absolute;
+  top: 45%;
+  z-index: 9;
+  cursor: pointer; }
+
+.iview-prevNav {
+  left: 20px; }
+  .rtl .iview-prevNav {
+    right: 20px;
+    left: auto; }
+  .iview-prevNav:before {
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    margin: auto;
+    content: "";
+    position: absolute;
+    content: "\f104";
+    font-family: "FontAwesome";
+    line-height: 54px;
+    text-align: center; }
+
+.iview-nextNav {
+  right: 20px; }
+  .rtl .iview-nextNav {
+    left: 20px;
+    right: auto; }
+  .iview-nextNav:before {
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    margin: auto;
+    content: "";
+    position: absolute;
+    content: "\f105";
+    font-family: "FontAwesome";
+    line-height: 54px;
+    text-align: center; }
+
+ul.pagination_slider li {
+  float: left;
+  color: #444;
+  text-transform: uppercase;
+  font-size: 14px;
+  font-family: "Hind", sans-serif;
+  font-weight: 300;
+  padding: 20px;
+  display: inline-block;
+  cursor: pointer; }
+  .rtl ul.pagination_slider li {
+    float: right; }
+  ul.pagination_slider li .serial {
+    font-size: 30px;
+    border: 1px solid #e0e0e0;
+    width: 60px;
+    height: 60px;
+    text-align: center;
+    line-height: 58px;
+    margin-right: 20px;
+    padding-top: 0; }
+    .rtl ul.pagination_slider li .serial {
+      margin-left: 20px;
+      margin-right: inherit; }
+  ul.pagination_slider li.active {
+    background-color: #222222;
+    color: #fff; }
+    ul.pagination_slider li.active .serial {
+      background-color: #3f3f3f;
+      border: 1px solid #555555; }
